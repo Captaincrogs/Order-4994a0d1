@@ -19,9 +19,8 @@ $to_show = $film_request->fetch(PDO::FETCH_ASSOC);
 
 <body>
     <main>
-        <h1>Welkom op het netland</h1>
+        <h1>Welkom op het netland beheerderspaneel</h1>
         <h2>Hier vindt u all data over<?php echo PHP_EOL . $to_show['titel']; ?>:</h2>
-
         <div style="display:flex; flex-direction:row; width:200px; justify-content: space-around;">
             <h3><?php echo $to_show['titel'] ?></h3>
             <h4><?php echo $to_show['duur_in_min'] . PHP_EOL ?>min</h4>
